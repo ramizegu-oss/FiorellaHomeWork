@@ -13,6 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IFlowerService, FlowerService>();
+builder.Services.AddScoped<ISliderService,SliderService>();
 
 var app = builder.Build();
 app.UseStaticFiles();

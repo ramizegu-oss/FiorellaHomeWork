@@ -1,3 +1,4 @@
+wwwroot\css\productDetail.css
 wwwroot\css\style.css
 wwwroot\css\style.css.map
 wwwroot\img\blog-feature-img-1.jpg
@@ -41,6 +42,7 @@ wwwroot\img\shop-category-img-5.jpg
 wwwroot\img\shop-category-img-6.jpg
 wwwroot\img\testimonial-img-1.png
 wwwroot\img\testimonial-img-2.png
+wwwroot\js\productDetail.js
 wwwroot\js\script.js
 wwwroot\owlcarousel\owl.carousel.min.css
 wwwroot\owlcarousel\owl.carousel.min.js
@@ -70,3 +72,5 @@ C:\Users\Asus\Desktop\PA502\Backend\AspNet\FiorelloHomeWork\FiorelloHomeWork\www
 C:\Users\Asus\Desktop\PA502\Backend\AspNet\FiorelloHomeWork\FiorelloHomeWork\wwwroot\owlcarousel\owl.carousel.min.css
 C:\Users\Asus\Desktop\PA502\Backend\AspNet\FiorelloHomeWork\FiorelloHomeWork\wwwroot\owlcarousel\owl.carousel.min.js
 C:\Users\Asus\Desktop\PA502\Backend\AspNet\FiorelloHomeWork\FiorelloHomeWork\wwwroot\owlcarousel\owl.theme.default.min.css
+C:\Users\Asus\Desktop\PA502\Backend\AspNet\FiorelloHomeWork\FiorelloHomeWork\wwwroot\css\productDetail.css
+C:\Users\Asus\Desktop\PA502\Backend\AspNet\FiorelloHomeWork\FiorelloHomeWork\wwwroot\js\productDetail.js

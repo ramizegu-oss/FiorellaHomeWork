@@ -1,0 +1,128 @@
+/* Product detail page */
+
+#product-title {
+  background-color: #f7f7f7;
+}
+
+#product-title h1 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+#product-title i {
+  font-family: Lora, serif;
+  font-size: 17px;
+}
+
+#product-detail .main-img {
+  overflow: hidden;
+}
+
+#product-detail .thumbs .thumb {
+  cursor: pointer;
+  opacity: .6;
+  border: 1px solid transparent;
+  transition: opacity .3s;
+}
+
+#product-detail .thumbs .thumb:hover,
+#product-detail .thumbs .thumb.active {
+  opacity: 1;
+  border-color: #f34f3f;
+}
+
+#product-detail .info h2 {
+  font-family: "Playfair Display", serif;
+}
+
+#product-detail .info .rating i {
+  color: #f34f3f;
+  font-size: 13px;
+}
+
+#product-detail .info .rating span {
+  font-size: 12px;
+}
+
+#product-detail .info .price {
+  font-family: Lora, serif;
+  color: #f34f3f;
+}
+
+#product-detail .info .short-desc {
+  font-family: Lora, serif;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+#product-detail .quantity button {
+  width: 40px;
+  height: 48px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#product-detail .quantity button:focus {
+  outline: none;
+}
+
+#product-detail .quantity input {
+  width: 50px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  border-right: none;
+}
+
+#product-detail .info .btn-danger {
+  padding: 12px 40px;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: #f34f3f;
+}
+
+#product-detail .meta li {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+#product-detail .meta a:hover {
+  color: #f34f3f !important;
+  text-decoration: none;
+}
+
+#product-detail .nav-tabs .nav-link {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 0;
+}
+
+#product-detail .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #f34f3f;
+  border-color: #f34f3f;
+}
+
+#product-detail .tab-content p {
+  font-family: Lora, serif;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+#product-detail .review h6 {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#product-detail .review .rating i {
+  color: #f34f3f;
+  font-size: 12px;
+}

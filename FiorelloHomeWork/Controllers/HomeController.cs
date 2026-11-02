@@ -10,21 +10,26 @@ namespace FiorelloHomeWork.Controllers
     {
         readonly ICategoryService _service;
         readonly IFlowerService _flowerService;
-        
-        public HomeController(ICategoryService service,IFlowerService flowerService)
+        readonly ISliderService _sliderService;
+
+
+        public HomeController(ICategoryService service,IFlowerService flowerService,ISliderService sliderService)
         {
             _service = service;
             _flowerService = flowerService;
+            _sliderService = sliderService;
         }
         public async Task<IActionResult> Index()
         {
             var catigories = await _service.GetAllUIAsync();
             var flowers = await _flowerService.GetAllFlowers();
+            var sliders = await _sliderService.GetAllAsync();
 
             HomeVM model = new()
             {
                 Category = catigories,
-                Flower = flowers
+                Flower = flowers,
+                Slider = sliders
             };
             return View(model);
         }

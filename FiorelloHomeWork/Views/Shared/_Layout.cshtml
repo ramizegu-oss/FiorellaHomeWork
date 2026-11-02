@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="~/css/style.css">
     <title>Fiorello &#8211; A Flower Shop and Florist WooCommerce Theme</title>
+    @RenderSection("css",required: false)
 </head>
 
 <body>
@@ -387,6 +388,7 @@
     <script src="https://kit.fontawesome.com/e5e249fce2.js" crossorigin="anonymous"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    @await RenderSectionAsync("scripts", required: false)
 </body>
 
 </html>

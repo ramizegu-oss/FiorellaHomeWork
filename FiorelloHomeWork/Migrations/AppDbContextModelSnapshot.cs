@@ -92,6 +92,31 @@ namespace FiorelloHomeWork.Migrations
                     b.ToTable("FlowerImages");
                 });
 
+            modelBuilder.Entity("FiorelloHomeWork.Models.FlowerSlider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FlowerImage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FlowerSliders");
+                });
+
             modelBuilder.Entity("FiorelloHomeWork.Models.Flower", b =>
                 {
                     b.HasOne("FiorelloHomeWork.Models.Category", "Category")
