@@ -9,5 +9,6 @@ namespace FiorelloHomeWork.ViewModels
         public IEnumerable<CategoryUIVM> Category { get; set; }
         public IEnumerable<FlowerUIVM> Flower { get; set; }
         public IEnumerable<FlowerSliderUIVM> Slider { get; set; }
+        public IEnumerable<FlowerSearchUIVM> FindedFlowers { get; set; }
     }
 }

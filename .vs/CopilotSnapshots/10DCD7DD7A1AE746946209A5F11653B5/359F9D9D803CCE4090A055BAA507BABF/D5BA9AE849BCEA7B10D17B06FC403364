@@ -1,0 +1,21 @@
+﻿@model IEnumerable<FlowerSearchUIVM>
+
+@if (Model.Any())
+{
+    foreach (var flower in Model)
+    {
+        <a class="live-search-result"
+           href="@Url.Action("Detail", "FlowerDetail", new { id = flower.Id })"
+           role="option">
+            <img src="~/img/@flower.MainImg" alt="">
+            <span class="live-search-product-info">
+                <span class="live-search-product-name">@flower.Name</span>
+                <span class="live-search-product-price">$@flower.Price</span>
+            </span>
+        </a>
+    }
+}
+else
+{
+    <div class="live-search-empty">No products found</div>
+}

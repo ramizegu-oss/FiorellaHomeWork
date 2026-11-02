@@ -1,0 +1,149 @@
+﻿<style>
+    .live-search-input-row {
+        position: relative;
+    }
+
+    header nav ul .search .live-search-results {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        z-index: 1000;
+        display: block;
+        width: 320px;
+        max-height: 330px;
+        overflow-y: auto;
+        padding: 6px 0;
+        margin: 0;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .14);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header nav ul .search .live-search-results[hidden] {
+        display: none !important;
+    }
+
+    header nav ul .search .live-search-result {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 14px;
+        color: #1b1b1b !important;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        transition: background-color .2s ease;
+    }
+
+    header nav ul .search .live-search-result::after {
+        display: none;
+    }
+
+    header nav ul .search .live-search-result:hover {
+        background-color: #f7f7f7;
+        color: #1b1b1b !important;
+        text-decoration: none;
+    }
+
+    .live-search-result img {
+        flex: 0 0 56px;
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+    }
+
+    .live-search-product-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        min-width: 0;
+    }
+
+    .live-search-product-name {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .live-search-product-price {
+        color: #888;
+        font-size: 13px;
+    }
+
+    .live-search-empty {
+        padding: 12px 14px;
+        color: #888;
+        font-size: 13px;
+    }
+
+    @@media (max-width: 575.98px) {
+        header nav ul .search .live-search-results {
+            width: min(320px, calc(100vw - 40px));
+        }
+    }
+</style>
+
+<li class="nav-item my-auto search">
+    <i class="fas fa-search" id="search" aria-hidden="true"></i>
+    <ul class="list-unstyled py-3">
+        <li class="d-flex px-3 live-search-input-row">
+            <input id="input-search"
+                   type="search"
+                   placeholder="Search"
+                   autocomplete="off"
+                   aria-label="Search products"
+                   aria-controls="search-results">
+            <i class="fas fa-search my-auto" aria-hidden="true"></i>
+            <div id="search-results"
+                 class="live-search-results"
+                 role="listbox"
+                 aria-label="Search results"
+                 hidden>
+            </div>
+        </li>
+    </ul>
+</li>
+
+<script>
+    const input = document.getElementById("input-search");
+    const results = document.getElementById("search-results");
+    const searchUrl = "@Url.Action("Search", "Home")";
+    let timer;
+
+    input.addEventListener("input", function () {
+        clearTimeout(timer);
+
+        const txt = input.value.trim();
+        if (txt === "") {
+            results.innerHTML = "";
+            results.hidden = true;
+            return;
+        }
+
+        timer = setTimeout(function () {
+            fetch(searchUrl + "?txt=" + encodeURIComponent(txt))
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error("Search request failed");
+                    }
+                    return response.text();
+                })
+                .then(function (html) {
+                    if (input.value.trim() === txt) {
+                        results.innerHTML = html;
+                        results.hidden = false;
+                    }
+                })
+                .catch(function (error) {
+                    console.error(error);
+                });
+        }, 250);
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".search")) {
+            results.hidden = true;
+        }
+    });
+</script>

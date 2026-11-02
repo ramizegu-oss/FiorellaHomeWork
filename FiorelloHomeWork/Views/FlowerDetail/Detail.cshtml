@@ -1,4 +1,4 @@
-﻿@model FlowerDetailUIVM
+﻿@model FlowerDetailVM
 
 @section css{
     <link rel="stylesheet" href="~/assets/css/productDetail.css">
@@ -21,7 +21,7 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12 text-center">
-                        <h1>@Model.Title</h1>
+                        <h1>@Model.Flower.Title</h1>
                         <i class="text-black-50">
                             <a asp-controller="Home" asp-action="Index" class="text-black-50">Home</a> / Shop / Majesty Palm
                         </i>
@@ -40,7 +40,7 @@
 
                     <!-- Images -->
                     <div class="col-md-6">
-                        @foreach (var item in Model.FlowerImages)
+                        @foreach (var item in Model.Flower.FlowerImages)
                     {
                         @if (item.IsMane)
                         {
@@ -51,7 +51,7 @@
                     }
                         
                         <div class="row thumbs mt-3">
-                            @foreach (var item in Model.FlowerImages)
+                            @foreach (var item in Model.Flower.FlowerImages)
                         {
                             
                             <div class="col-3">
@@ -64,14 +64,14 @@
                     <!-- Info -->
                     <div class="col-md-6">
                         <div class="info mt-4 mt-md-0 px-md-3">
-                            <h2 id="product-name">@Model.Title</h2>
+                            <h2 id="product-name">@Model.Flower.Title</h2>
 
                             
 
-                            <h3 class="price my-3" id="product-price">$@Model.Price</h3>
+                            <h3 class="price my-3" id="product-price">$@Model.Flower.Price</h3>
 
                             <p class="short-desc text-black-50">
-                                @Model.Description
+                                @Model.Flower.Description
                             </p>
 
                             <div class="buy d-flex align-items-center flex-wrap my-4">
@@ -86,7 +86,7 @@
 
                             <ul class="meta list-unstyled">
                                 <li><span>SKU:</span> <span class="text-black-50" id="product-sku">FR-0013</span></li>
-                                <li><span>Category:</span> @Model.CategoryName</li>
+                                <li><span>Category:</span> @Model.Flower.CategoryName</li>
                                 <li><span>Tags:</span> <a href="index.html" class="text-black-50">Palm</a>, <a
                                         href="index.html" class="text-black-50">Indoor</a></li>
                             </ul>
@@ -180,66 +180,25 @@
                     </div>
                 </div>
                 <div class="row pb-5">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item product-item-small text-center">
-                            <div class="img">
-                                <a href="product.html">
-                                    <img src="~/img/shop-12-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item product-item-small text-center">
-                            <div class="img">
-                                <a href="product.html">
-                                    <img src="~/img/shop-11-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">$259</span>
+                    @foreach (var item in Model.RelatedFlowers)
+                        {
+                        <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
+                            <div class="product-item product-item-small text-center">
+                                <div class="img">
+                                    <a asp-controller="flowerdetail" asp-action="detail" asp-route-id ="@item.Id">
+                                        <img src="~/img/@item.Image" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="title mt-3">
+                                    <h6>@item.Name</h6>
+                                </div>
+                                <div class="price">
+                                    <span class="text-black-50">$@item.Price</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item product-item-small text-center">
-                            <div class="img">
-                                <a href="product.html">
-                                    <img src="~/img/shop-10-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                        <div class="product-item product-item-small text-center">
-                            <div class="img">
-                                <a href="product.html">
-                                    <img src="~/img/shop-9-img.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="title mt-3">
-                                <h6>MAJESTY PALM</h6>
-                            </div>
-                            <div class="price">
-                                <span class="text-black-50">$259</span>
-                            </div>
-                        </div>
-                    </div>
+                        }
+                    
                 </div>
             </div>
         </section>

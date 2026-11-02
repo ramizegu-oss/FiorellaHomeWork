@@ -1,0 +1,83 @@
+﻿@* ===== Views/Shared/_SearchPartial.cshtml ===== *@
+
+<li class="nav-item my-auto search">
+    <i class="fas fa-search" aria-hidden="true"></i>
+
+    <ul class="list-unstyled py-3">
+        <li class="d-flex px-3 live-search-input-row">
+            <input id="input-search"
+                   type="text"
+                   placeholder="Search"
+                   autocomplete="off"
+                   aria-label="Search products">
+
+            <i class="fas fa-search my-auto" aria-hidden="true"></i>
+
+            <div id="search-results"
+                 class="live-search-results"
+                 hidden>
+            </div>
+        </li>
+    </ul>
+</li>
+
+<script>
+    (() => {
+        const input = document.getElementById("input-search");
+        const results = document.getElementById("search-results");
+        const searchUrl = "@Url.Action("Search", "Home")";
+        let timer;
+
+        if (!input || !results) return;
+
+        input.addEventListener("input", () => {
+            clearTimeout(timer);
+
+            const text = input.value.trim();
+
+            if (!text) {
+                results.replaceChildren();
+                results.hidden = true;
+                return;
+            }
+
+            timer = setTimeout(async () => {
+                try {
+                    const url = `${searchUrl}?txt=${encodeURIComponent(text)}`;
+                    const response = await fetch(url);
+
+                    if (!response.ok) {
+                        throw new Error(`Search failed: ${response.status}`);
+                    }
+
+                    results.innerHTML = await response.text();
+                    results.hidden = false;
+                } catch (error) {
+                    console.error("Could not load search results:", error);
+                    results.hidden = true;
+                }
+            }, 250);
+        });
+
+        document.addEventListener("click", event => {
+            if (!event.target.closest(".search")) {
+                results.hidden = true;
+            }
+        });
+    })();
+</script>
+
+
+
+@model IEnumerable<FlowerSearchUIVM>
+
+@foreach (var flower in Model)
+{
+    <a class="live-search-result" href="#">
+        <img src="~/img/@flower.MainImg" alt="">
+        <span class="live-search-product-info">
+            <span class="live-search-product-name">@flower.Name</span>
+            <span class="live-search-product-price">$@flower.Price</span>
+        </span>
+    </a>
+}

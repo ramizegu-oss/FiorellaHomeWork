@@ -1,4 +1,5 @@
 ﻿using FiorelloHomeWork.Services.Interfaces;
+using FiorelloHomeWork.ViewModels.Flower;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FiorelloHomeWork.Controllers
@@ -13,7 +14,14 @@ namespace FiorelloHomeWork.Controllers
         public async Task<IActionResult> Detail(int id)
         {
             var flowerDetail = await _flowerService.GetFlowerDetailAsync(id);
-            return View(flowerDetail);
+            var relatedFlowers = await _flowerService.GetRelatedFlowers(flowerDetail.CategoryName,flowerDetail.Id);
+
+            var model = new FlowerDetailVM
+            {
+                Flower = flowerDetail,
+                RelatedFlowers = relatedFlowers
+            };
+            return View(model);
         }
     }
 }
