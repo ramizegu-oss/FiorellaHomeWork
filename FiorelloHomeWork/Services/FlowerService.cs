@@ -2,6 +2,7 @@
 using FiorelloHomeWork.Models;
 using FiorelloHomeWork.Services.Interfaces;
 using FiorelloHomeWork.ViewModels.Flower;
+using FiorelloHomeWork.ViewModels.UserComment;
 using LabFront.ViewModels.Product;
 using Microsoft.EntityFrameworkCore;
 namespace FiorelloHomeWork.Services
@@ -43,7 +44,7 @@ namespace FiorelloHomeWork.Services
 
         public async Task<FlowerDetailUIVM> GetFlowerDetailAsync(int id)
         {
-            var flower = await _context.Flowers.Include(f => f.Category).Include(f => f.Images).FirstOrDefaultAsync(f=> f.Id == id);
+            var flower = await _context.Flowers.Include(f=> f.FlowerComments).Include(f => f.Category).Include(f => f.Images).FirstOrDefaultAsync(f=> f.Id == id);
 
             return new FlowerDetailUIVM
             {
@@ -54,6 +55,12 @@ namespace FiorelloHomeWork.Services
                 {
                     Name = m.Name,
                     IsMane = m.IsMain
+                }),
+                FlowerComments = flower.FlowerComments.Select(f => new UserCommentUIVM
+                {
+                    FullName = f.Name + " " + f.LastName,
+                    Description = f.Description,
+                    RateCount = f.RateCount
                 })
             };
         }

@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\views\\shared\\_searchpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\views\\shared\\_searchpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\views\\home\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\controllers\\flowerdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\controllers\\flowerdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\views\\flowerdetail\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\views\\flowerdetail\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\viewmodels\\flower\\flowerdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\viewmodels\\flower\\flowerdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|c:\\users\\asus\\desktop\\pa502\\backend\\aspnet\\fiorellohomework\\fiorellohomework\\viewmodels\\usercomment\\usercommentuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFE92EC3-50A8-D7A9-19C6-E924CBD9C75F}|FiorelloHomeWork\\FiorelloHomeWork.csproj|solutionrelative:fiorellohomework\\viewmodels\\usercomment\\usercommentuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FlowerDetailVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
+              "RelativeDocumentMoniker": "FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
+              "RelativeToolTip": "FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:04:07.475Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
@@ -46,80 +55,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "FiorelloHomeWork\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "FiorelloHomeWork\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-02T20:15:56.693Z",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Program.cs",
+              "RelativeDocumentMoniker": "FiorelloHomeWork\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Program.cs",
+              "RelativeToolTip": "FiorelloHomeWork\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-03T11:03:37.425Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_SearchPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\Shared\\_SearchPartial.cshtml",
-              "RelativeDocumentMoniker": "FiorelloHomeWork\\Views\\Shared\\_SearchPartial.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\Shared\\_SearchPartial.cshtml",
-              "RelativeToolTip": "FiorelloHomeWork\\Views\\Shared\\_SearchPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAA7AAAAAAAAAA==",
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\FlowerDetail\\Detail.cshtml",
+              "RelativeDocumentMoniker": "FiorelloHomeWork\\Views\\FlowerDetail\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\FlowerDetail\\Detail.cshtml",
+              "RelativeToolTip": "FiorelloHomeWork\\Views\\FlowerDetail\\Detail.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAwHAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-02T19:57:11.633Z",
+              "WhenOpened": "2026-11-03T10:32:29.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Search.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\Home\\Search.cshtml",
-              "RelativeDocumentMoniker": "FiorelloHomeWork\\Views\\Home\\Search.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Views\\Home\\Search.cshtml",
-              "RelativeToolTip": "FiorelloHomeWork\\Views\\Home\\Search.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-02T19:52:55.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "FiorelloHomeWork\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "FiorelloHomeWork\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwDAAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T19:00:02.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "FlowerDetailController.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Controllers\\FlowerDetailController.cs",
               "RelativeDocumentMoniker": "FiorelloHomeWork\\Controllers\\FlowerDetailController.cs",
               "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\Controllers\\FlowerDetailController.cs",
               "RelativeToolTip": "FiorelloHomeWork\\Controllers\\FlowerDetailController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwBIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:20:33.968Z",
+              "WhenOpened": "2026-11-03T10:29:55.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FlowerDetailVM.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
-              "RelativeDocumentMoniker": "FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
-              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
-              "RelativeToolTip": "FiorelloHomeWork\\ViewModels\\Flower\\FlowerDetailVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserCommentUIVM.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\ViewModels\\UserComment\\UserCommentUIVM.cs",
+              "RelativeDocumentMoniker": "FiorelloHomeWork\\ViewModels\\UserComment\\UserCommentUIVM.cs",
+              "ToolTip": "C:\\Users\\Asus\\Desktop\\PA502\\Backend\\AspNet\\FiorelloHomeWork\\FiorelloHomeWork\\ViewModels\\UserComment\\UserCommentUIVM.cs",
+              "RelativeToolTip": "FiorelloHomeWork\\ViewModels\\UserComment\\UserCommentUIVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:19:42.181Z"
+              "WhenOpened": "2026-11-03T10:23:24.808Z",
+              "EditorCaption": ""
             }
           ]
         }

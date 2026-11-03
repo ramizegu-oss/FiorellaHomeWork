@@ -7,6 +7,7 @@ namespace FiorelloHomeWork.Controllers
     public class FlowerDetailController : Controller
     {
         private readonly IFlowerService _flowerService;
+
         public FlowerDetailController(IFlowerService flowerService)
         {
             _flowerService = flowerService;
@@ -15,11 +16,11 @@ namespace FiorelloHomeWork.Controllers
         {
             var flowerDetail = await _flowerService.GetFlowerDetailAsync(id);
             var relatedFlowers = await _flowerService.GetRelatedFlowers(flowerDetail.CategoryName,flowerDetail.Id);
-
             var model = new FlowerDetailVM
             {
                 Flower = flowerDetail,
-                RelatedFlowers = relatedFlowers
+                RelatedFlowers = relatedFlowers,
+
             };
             return View(model);
         }

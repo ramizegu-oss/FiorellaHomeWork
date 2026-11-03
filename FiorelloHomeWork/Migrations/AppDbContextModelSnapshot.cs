@@ -117,6 +117,42 @@ namespace FiorelloHomeWork.Migrations
                     b.ToTable("FlowerSliders");
                 });
 
+            modelBuilder.Entity("FiorelloHomeWork.Models.UserComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("FlowerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RateCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FlowerId");
+
+                    b.ToTable("UserComments");
+                });
+
             modelBuilder.Entity("FiorelloHomeWork.Models.Flower", b =>
                 {
                     b.HasOne("FiorelloHomeWork.Models.Category", "Category")
@@ -132,6 +168,17 @@ namespace FiorelloHomeWork.Migrations
                 {
                     b.HasOne("FiorelloHomeWork.Models.Flower", "Flower")
                         .WithMany("Images")
+                        .HasForeignKey("FlowerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Flower");
+                });
+
+            modelBuilder.Entity("FiorelloHomeWork.Models.UserComment", b =>
+                {
+                    b.HasOne("FiorelloHomeWork.Models.Flower", "Flower")
+                        .WithMany()
                         .HasForeignKey("FlowerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

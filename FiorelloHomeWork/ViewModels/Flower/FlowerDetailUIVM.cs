@@ -1,5 +1,6 @@
 ﻿using FiorelloHomeWork.Models;
 using FiorelloHomeWork.ViewModels.Category;
+using FiorelloHomeWork.ViewModels.UserComment;
 using LabFront.ViewModels.Product;
 
 namespace FiorelloHomeWork.ViewModels.Flower
@@ -12,5 +13,6 @@ namespace FiorelloHomeWork.ViewModels.Flower
         public double Price { get; set; }
         public string CategoryName { get; set; }
         public IEnumerable<FlowerImageUIVM> FlowerImages { get; set; }
+        public IEnumerable<UserCommentUIVM> FlowerComments { get; set; }
     }
 }

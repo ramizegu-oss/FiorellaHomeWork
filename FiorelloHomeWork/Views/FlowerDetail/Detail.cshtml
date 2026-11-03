@@ -107,7 +107,7 @@
                                     information</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab">Reviews (3)</a>
+                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab">Reviews (@Model.Flower.FlowerComments.Count())</a>
                             </li>
                         </ul>
                         <div class="tab-content py-4">
@@ -141,24 +141,22 @@
                                 </table>
                             </div>
                             <div class="tab-pane fade" id="reviews" role="tabpanel">
-                                <div class="review mb-4">
-                                    <h6>Anna Barnes</h6>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                                @foreach (var item in Model.Flower.FlowerComments)
+                                    {
+                                    <div class="review mb-4">
+                                        <h6>@item.FullName</h6>
+                                        <div class="rating">
+                                                @for (int i = 0; i < item.RateCount; i++)
+                                                {
+                                                    <i class="fas fa-star"></i>
+                                                }
+                                            </div>
+                                        <p class="text-black-50 mt-2">
+                                            @item.Description
+                                        </p>
                                     </div>
-                                    <p class="text-black-50 mt-2">Nullam dictum felis eu pede mollis pretium. Integer
-                                        tincidunt.</p>
-                                </div>
-                                <div class="review mb-4">
-                                    <h6>Jasmine White</h6>
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i><i class="far fa-star"></i>
-                                    </div>
-                                    <p class="text-black-50 mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                        elit.</p>
-                                </div>
+                                    }
+                                
                             </div>
                         </div>
                     </div>

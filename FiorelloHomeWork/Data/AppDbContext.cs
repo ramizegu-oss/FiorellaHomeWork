@@ -9,6 +9,7 @@ namespace FiorelloHomeWork.Data
         public DbSet<Flower> Flowers { get; set; }
         public DbSet<FlowerImage> FlowerImages { get; set; }
         public DbSet<FlowerSlider> FlowerSliders { get; set; }
+        public DbSet<UserComment> UserComments { get; set; }
 
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
